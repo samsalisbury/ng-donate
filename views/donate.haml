@@ -10,3 +10,34 @@
 			%div.pure-u-1-4
 			%div.pure-u-1-2
 				%h1 ng-donate
+		%div.pure-g-r
+			%div.pure-u-1-3
+			%div.pure-u-1-3.ng-donate
+				%form.pure-form
+					%fieldset
+						%label{for: "sponsor-message"} Message
+						%textarea.pure-input-1{id: "sponsor-message", placeholder: "optional"}
+						%label{for: "sponsor-name"} Your name (publically visible)
+						%input{id: "sponsor-name", placeholder: "anonymous"}
+					%div.pure-g-r
+						%div.pure-u-1-3
+							%label{for: "sponsor-currency"} Currency
+							%select{id: "sponsor-currency"}
+								%option GBP
+								%option AUD
+								%option CAD
+								%option EUR
+								%option SGD
+								%option UAD
+								%option USD
+						%div.pure-u-2-3
+							%label{for: "sponsor-amount"} Amount
+							%input{id: "sponsor-amount", placeholder: "e.g. 15 or 34.21"}
+					%fieldset
+						%input{type: "button", value: "£10"}
+						%input{type: "button", value: "£20"}
+						%input{type: "button", value: "£50"}
+						%input{type: "button", value: "£100"}
+
+
+
